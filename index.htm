@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -33,7 +38,8 @@
                             </div>
                             <div class="button-container align-items-center">
                                 <a href="tel:+994503900304" class="btn btn-gray">+994 50 390 03 04</a>
-                                <button href="tel:+994503900304" class="btn btn-aqua">Qiymət təklifi al</button>
+                                <button type="button" href="tel:+994503900304" class="btn btn-aqua"
+                                    data-bs-toggle="modal" data-bs-target="#modal">Qiymət təklifi al</button>
                             </div>
                             <button class="menu-container" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#mobmenu">
@@ -65,6 +71,7 @@
                                     </li>
                                     <li><a href="#">Qalereya</a></li>
                                     <li><a href="#">Əlaqə</a></li>
+                                    <li class="line-hover"></li>
                                 </ul>
                             </nav>
                         </div>
@@ -88,7 +95,7 @@
                         <ul class="menu">
                             <li><a href="#">Baş səhifə</a></li>
                             <li><a href="#">Şirkət haqqında</a></li>
-                            <li><a href="#">
+                            <li class="sub"><a href="#">
                                     Xidmətlərimiz
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -107,14 +114,160 @@
                         </ul>
                     </div>
                     <div class="mob-button-container button-container">
-                        <button href="tel:+994503900304" class="btn btn-aqua">Qiymət təklifi al</button>
+                        <button type="button" href="tel:+994503900304" class="btn btn-aqua">Qiymət təklifi al</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <main class="main">
-        <section id="slider"></section>
+        <section id="slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators pb-lg-3">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                        </svg>
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                        </svg>
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                        </svg>
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                            <circle cx="16" cy="16" r="15" stroke-width="2"></circle>
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="slide_desc">
+                                        <div class="slide_height">
+                                            <h2>Avtomobil nəqliyyatı ilə beynəlxalq yükdaşıma</h2>
+                                            <p>
+                                                Beynəlxalq ticarətdə geniş istifadə olunan TIR ilə yükdaşıma
+                                                müştərilərimizə təklif etdiyimiz əsas xidmət sahələrindən biridir. İmaj
+                                                Transport olaraq həm ölkədaxili həm də beynəlxalq yükdaşımada peşəkar
+                                                heyəti ilə müştərilərə sürətli və keyfiyyətli xidmət təklif edirik.
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn-information">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="circle-container">
+                                        <div class="dots"></div>
+                                        <img src="./img/slider/transport1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="slide_desc">
+                                        <div class="slide_height">
+                                            <h2>Dəmiryol Nəqliyyatı ilə beynəlxalq yükdaşıma</h2>
+                                            <p>
+                                                İmaj Transport olaraq xüsusi ilə Rusiya və digər şimal ölkələri ilə
+                                                ticarət əlaqələri olan şirkətlərin çox istifadə etdiyi, ağır yüklərin
+                                                daşınmasında çox istifadə edilən dəmiryolu ilə daşınma xidmətini
+                                                müştərilərimizə təklif edirik.
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn-information">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="circle-container">
+                                        <div class="dots"></div>
+                                        <img src="./img/slider/transport2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="slide_desc">
+                                        <div class="slide_height">
+                                            <h2>Dəniz yolu ilə beynəlxalq yükdaşıma</h2>
+                                            <p>
+                                                İmaj Transport, Uzaq Şərqdən Avropaya qədər bütün istiqamətlərə
+                                                yükdaşıma xidməti göstərir. Şirkət olaraq, çıxış nöqtəsindən təhvil
+                                                nöqtəsinə qədər daşıma, yükləmə və boşaltma prosesinin təşkilini və
+                                                məsuliyyətini öz üzərimizə götürürük.
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn-information">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="circle-container">
+                                        <div class="dots"></div>
+                                        <img src="./img/slider/transport3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="slide_desc">
+                                        <div class="slide_height">
+                                            <h2>Hava yolu ilə beynəlxalq yükdaşıma</h2>
+                                            <p><b>İmaj Transport</b> olaraq müştərilərimizə dünyanın ən sürətli
+                                                nəqliyyat vasitəsi
+                                                olan təyyarə ilə beynəlxalq hava yük daşımalarının həyata keçirilməsi
+                                                üçün lazım
+                                                olan logistik və nəqliyyat xidmətlərinin tam kompleksini təqdim edirik.
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn-information">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12">
+                                    <div class="circle-container">
+                                        <div class="dots"></div>
+                                        <img src="./img/slider/transport4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="fas fa-chevron-left fa-lg" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="fas fa-chevron-right fa-lg" aria-hidden="true"></span>
+                    </button>
+                </div>
+        </section>
         <section id="services">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center all-more">
@@ -817,7 +970,14 @@
             <div class="container">
                 <div class="mb20px">
                     <div class="d-flex align-items-center">
-                        <svg id="svg-symbol--decor-arrow" viewBox="0 0 102 82"><path fill="#00aae7" d="M99.9 35.6l-.4-.4L66.8 2.4c-3.1-3.1-8.1-3.1-11.2 0-3.1 3.1-3.1 8.1 0 11.2L75 33.1l7.9 7.9-8 8-19.4 19.3c-1.5 1.5-2.3 3.6-2.3 5.6 0 2 .8 4.1 2.3 5.6 3.1 3.1 8.1 3.1 11.2 0l32.8-32.9.2-.2c.1-.1.1-.1.1-.2 1.3-1.4 2.2-3.3 2.1-5.5.1-1.9-.7-3.7-2-5.1"></path><path fill="#00aae7" d="M47.6 50.5c-5.2 0-9.5-4.2-9.5-9.5 0-5.2 4.2-9.5 9.5-9.5 5.2 0 9.5 4.2 9.5 9.5 0 5.2-4.3 9.5-9.5 9.5M9.5 50.5C4.2 50.5 0 46.2 0 41s4.2-9.5 9.5-9.5c5.2 0 9.5 4.2 9.5 9.5 0 5.2-4.3 9.5-9.5 9.5"></path></svg>
+                        <svg id="svg-symbol--decor-arrow" viewBox="0 0 102 82">
+                            <path fill="#00aae7"
+                                d="M99.9 35.6l-.4-.4L66.8 2.4c-3.1-3.1-8.1-3.1-11.2 0-3.1 3.1-3.1 8.1 0 11.2L75 33.1l7.9 7.9-8 8-19.4 19.3c-1.5 1.5-2.3 3.6-2.3 5.6 0 2 .8 4.1 2.3 5.6 3.1 3.1 8.1 3.1 11.2 0l32.8-32.9.2-.2c.1-.1.1-.1.1-.2 1.3-1.4 2.2-3.3 2.1-5.5.1-1.9-.7-3.7-2-5.1">
+                            </path>
+                            <path fill="#00aae7"
+                                d="M47.6 50.5c-5.2 0-9.5-4.2-9.5-9.5 0-5.2 4.2-9.5 9.5-9.5 5.2 0 9.5 4.2 9.5 9.5 0 5.2-4.3 9.5-9.5 9.5M9.5 50.5C4.2 50.5 0 46.2 0 41s4.2-9.5 9.5-9.5c5.2 0 9.5 4.2 9.5 9.5 0 5.2-4.3 9.5-9.5 9.5">
+                            </path>
+                        </svg>
                         <h2>Haqqımızda</h2>
                     </div>
                 </div>
@@ -825,11 +985,17 @@
                     <div class="about-img"></div>
                     <div class="about-content">
                         <p>
-                            <b>"İmaj Transport"</b> şirkəti malların çatdırılması üçün bütün növ nəqliyyat və əlaqəli xidmətlər təqdim edir. Biz daim inkişaf edirik və çalışırıq ki, müştərilərimizin qarşımıza qoyduqları ən müxtəlif və mürəkkəb vəzifələri həll etmək üçün müştərilərimizə ölkədaxilində və ölkədən xaricdə tam nəqliyyat xidmətləri təklif edək.
+                            <b>"İmaj Transport"</b> şirkəti malların çatdırılması üçün bütün növ nəqliyyat və əlaqəli
+                            xidmətlər təqdim edir. Biz daim inkişaf edirik və çalışırıq ki, müştərilərimizin qarşımıza
+                            qoyduqları ən müxtəlif və mürəkkəb vəzifələri həll etmək üçün müştərilərimizə ölkədaxilində
+                            və ölkədən xaricdə tam nəqliyyat xidmətləri təklif edək.
                         </p>
                         <a href="#" class="more">
                             <span>Daha Ətraflı</span>
-                            <svg id="svg-symbol--dropdown" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 6 12" style="enable-background:new 0 0 6 12;" xml:space="preserve"><path fill="#454749" d="M1.6,0L0,1.2L3.5,6L0,10.8L1.6,12L6,6L1.6,0z"></path></svg>
+                            <svg id="svg-symbol--dropdown" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 6 12"
+                                style="enable-background:new 0 0 6 12;" xml:space="preserve">
+                                <path fill="#454749" d="M1.6,0L0,1.2L3.5,6L0,10.8L1.6,12L6,6L1.6,0z"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -842,20 +1008,254 @@
                     <a class="more" href="#">Bütün xidmətlərə bax</a>
                 </div>
             </div>
+            <div class="container-fluid">
+                <div class="slideSlick">
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/4.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/5.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/6.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/7.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/8.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/9.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/10.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/11.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/12.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/13.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/14.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/15.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/16.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/17.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/18.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/19.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/20.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/21.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/22.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/23.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/24.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/25.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/26.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/27.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/28.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/29.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/30.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/31.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/32.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/33.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="slickGallerySlide">
+                            <img src="./img/gallery/34.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="referans">
             <div class="container">
                 <div class="d-flex justify-content-center referans-title">
                     <h2>Referanslar</h2>
                 </div>
-                <div class="referans-slider">
-
+                <div class="container">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="swiper-referans">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <h2>Tidakol</h2>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <h2>Multipack</h2>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/7.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/8.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <img src="./img/references/9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-img">
+                                        <h2>Elektropark Baku</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="info">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center text-center text-lg-start">
                     <div class="col-lg-8 col-xs-12 col-md-12">
                         <div class="info-title">
                             <h2>Sürətli qiymət sorğusu</h2>
@@ -863,21 +1263,119 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-xs-12 col-md-12">
-                        <button class="btn-call">
+                        <button type="button" class="btn-call" data-bs-toggle="modal" data-bs-target="#modal">
                             Qiymət təklifi al
-                            <svg id="svg-symbol--dropdown" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 6 12" style="enable-background:new 0 0 6 12;" xml:space="preserve"><path fill="#000" d="M1.6,0L0,1.2L3.5,6L0,10.8L1.6,12L6,6L1.6,0z"></path></svg>
+                            <svg id="svg-symbol--dropdown" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 6 12"
+                                style="enable-background:new 0 0 6 12;" xml:space="preserve">
+                                <path fill="#000" d="M1.6,0L0,1.2L3.5,6L0,10.8L1.6,12L6,6L1.6,0z"></path>
+                            </svg>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footerTop"></div>
-        <div class="footerBottom"></div>
+    <footer id="footer">
+        <div class="footerTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-sm-12">
+                        <ul class="footer__list d-flex">
+                            <li><a href="#">Baş səhifə</a></li>
+                            <li><a href="#">Şirkət haqqında</a></li>
+                            <li><a href="#">Xidmətlərimiz</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12">
+                        <ul class="footer__list d-flex">
+                            <li><a href="#">Qalereya</a></li>
+                            <li><a href="#">Bizimlə əlaqə</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12">
+                        <h2>QAYNAR XƏTT</h2>
+                        <ul class="footer__list d-flex">
+                            <li class="phone">
+                                <a href="tel:+994503900304">(+994 50) 390 03 04</a>
+                            </li>
+                            <li>
+                                <ul class="footer__list-social"></ul>
+                            </li>
+                        </ul>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12">
+                        <h2>ÜNVANIMIZ</h2>
+                        <ul class="footer__list d-flex">
+                            <li class="address">
+                                Qaradağ rayonu,
+                                <br />
+                                Xocahəsən yolu 60
+                                <br />
+                                Bakı, Azərbaycan
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <p>©<span class="date"></span>İmaj Transport LLC</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <p class="text-lg-center"><a href="#">Bizi xəritədə tapın<i class="fas fa-map-marker-alt"
+                                    aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <p class="banner d-flex justify-content-lg-end">Site by<a href="#"><img
+                                    src="./img/okmedia-logo-white.png" /></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modalCustomHeader">
+                    <h5>Qiymət təklifi al</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form">
+                        <div class="mb-3 col-md-12 col-xs-12">
+                            <input type="text" class="form-control formCustomInput" placeholder="Ad, Soyad">
+                        </div>
+                        <div class="mb-3 col-md-12 col-xs-12">
+                            <input type="number" class="form-control formCustomInput" placeholder="Telefon nömrəniz">
+                        </div>
+                        <div class="mb-3 col-md-12 col-xs-12">
+                            <input type="text" class="form-control formCustomInput"
+                                placeholder="Təmsil etdiyniz şirkət">
+                        </div>
+                        <div class="mb-3 col-md-12 col-xs-12">
+                            <textarea class="form-control formCustomText" rows="3" placeholder="Qeydləriniz"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-aqua btn-primary w-100">Göndər</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
