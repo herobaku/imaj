@@ -1,7 +1,6 @@
 $(document).ready(() => {
     const date = new Date()
     const year = date.getFullYear()
-
     $('span.date').html(" " + year + " ")
 
 })
@@ -37,13 +36,6 @@ new Swiper('.swiper-referans', {
     },
 });
 
-
-
-
-
-
-
-
 $(document).ready(function () {
     // nav items hover  
     $('.menu li').on('mouseover', function () {
@@ -71,8 +63,6 @@ $(window).click(() => {
     $('.lang-container').removeClass('active')
 })
 
-
-
 // new Swiper('.swiper-gallery', {
 //     loop: true,
 //     slidesPerView: 2,
@@ -92,10 +82,8 @@ $(document).ready(function () {
     $('.slideSlick').slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         dots: true,
-        speed: 1000,
-        autoplay: false,
         arrows: true,
         responsive: [
             {
