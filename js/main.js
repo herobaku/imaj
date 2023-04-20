@@ -96,3 +96,29 @@ $(document).ready(function () {
         ]
     })
 });
+
+/* Gallery */
+
+const rowTransport = document.querySelector(".row-transport");
+let count = 34;
+
+function row() {
+    for (let i = 1; i <= count; i++) {
+        rowTransport.innerHTML += `
+        <div class="col-lg-4 col-md-6 col-xs-12 colCustom">
+            <a href="./img/gallery/${i}.jpeg" data-fancybox="gallery">
+                <img src="./img/gallery/${i}.jpeg" />
+            </a>
+        </div>
+    `
+    }
+}
+
+row()
+
+/* FancyBox */
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    // Your custom options
+    hideScrollbar: true,
+  });
